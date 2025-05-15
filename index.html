@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sticky Menu Inside Sections</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    .sticky-wrapper-container-1 {
+      position: relative;
+
+    }
+
+    .sticky-bound-container-1 {
+      position: relative;
+    }
+
+    .sticky-menu-link-up{
+      position: sticky;
+      top: 50%;
+      transform: translateY(-50%);
+      width: fit-content;
+      margin: auto;
+      background: #00000000;
+      padding: 0px;
+      border-radius: 10px;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: opacity 0.3s ease;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .menu-link-link-up.active, .menu-link-link-up:hover {
+      background: #00000000;
+      color: #fff !important;
+    }
+
+    .menu-link-link-up {
+      color: #ffffff8a !important;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      border-radius: 5px;
+      margin: 5px 0;
+      font-family: 'Heebo', sans-serif;
+      font-size: 30px;
+      line-height: 25px;
+      text-transform: uppercase;
+    }
+
+    .menu-link-link-up.active,
+    .menu-link-link-up:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .menu-link-link-up.active, .menu-link-link-up:hover {
+     background: #00000000 !important;
+    }
+
+    .shop-btn-button-1  .button_1{
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 0px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 18px;
+    background-color: #ffffff00 !important;
+    padding: 25px 5px 10px 5px;
+    text-transform: uppercase;
+    }
+
+    .button_1{
+      border-bottom: 1px solid #fff !important;
+    }
+
+    .section-img {
+    width: 1920px !important;
+    height: 1100px; /* custom height */
+    background-size: cover; /* or cover / auto */
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    #section1-sm01, #section3-sm01  {
+    background-position: top !important;
+    }
+    
+    #section1-sm01 {
+    background-image: url('https://yn10565.com/wp-content/uploads/2025/05/6-scaled-1.jpg');
+    margin-bottom: -312px !important;
+     }
+     #section2-sm01 {
+    background-position: right center  !important;
+    }
+
+    #section1-sm01 { background-image: url('https://yn10565.com/wp-content/uploads/2025/05/Untitled-design-1.webp'); }
+    #section2-sm01 { background-image: url('https://yn10565.com/wp-content/uploads/2025/05/Untitled-design-2.png'); }
+    #section3-sm01 { background-image: url('https://yn10565.com/wp-content/uploads/2025/05/Untitled-design-3.png'); }
+    #section4-sm01 { background-image: url('https://yn10565.com/wp-content/uploads/2025/05/Untitled-design-4.png'); }
+
+
+    /* #section1-sm01 { background-image: url('img/Untitled-design-1.webp'); }
+    #section2-sm01 { background-image: url('img/Untitled-design-2.webp'); }
+    #section3-sm01 { background-image: url('img/Untitled-design-3.webp'); }
+    #section4-sm01 { background-image: url('img/Untitled-design-4.png'); } */
+
+
+
+    @media (max-width: 810px) {
+        .sticky-menu-link-up {
+          width: 90%;
+          padding: 15px;
+        }
+        .menu-link-link-up {
+          font-size: 20px;
+          padding: 1px;
+          line-height: 30px;
+        }
+        .shop-btn-button-1  .button_1{
+        font-size: 15px;
+        line-height: 15px;
+        background-color: #ffffff00 !important;
+        padding: 15px 2px 8px 2px;
+        }
+        .section-img {
+        width: 100% !important;
+        height: 70vh !important; /* custom height */
+        background-size: cover; /* or cover / auto */
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+        #section1-sm01 {
+        margin-bottom: -290px !important;
+        }
+        #section2-sm01 {
+            background-position: right center  !important;
+        }
+    }
+
+
+
+@media (max-width: 580px) {
+    .menu-link-link-up {
+    font-size: 17px;
+    padding: 1px;
+    line-height: 26px;
+    
+    }
+    .shop-btn-button-1  .button_1{
+    font-size: 12px;
+    line-height: 14px;
+    padding: 15px 2px 8px 2px;
+    }
+    .section-img {
+    width: 100% !important;
+    height: 50vh !important; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+      }
+    #section1-sm01 {
+    margin-bottom: -230px !important;   
+    }
+    #section2-sm01 {
+    background-position: right center  !important;
+    }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Section 1 (menu not visible here) -->
+      <a href="/product-category/new-collection/">
+  <div id="section1-sm01" class="section-img">
+
+  </div>
+  </a>
+
+  <!-- Sticky Area -->
+  <div class="sticky-wrapper-container-1">
+    <div class="sticky-bound-container-1">
+      <!-- Sticky Menu -->
+      <div class="sticky-menu-link-up" id="stickyMenu_1">
+        <a href="/product-category/new-collection/" class="menu-link-link-up" data-link="/product-category/new-collection/" data-section="section1-sm01">New Collection</a>
+        <a href="/product-category/shoes/" class="menu-link-link-up" data-link="/product-category/shoes/" data-section="section2-sm01">SHOES</a>
+        <a href="/product-category/sale/" class="menu-link-link-up" data-link="/product-category/sale/" data-section="section3-sm01">SALE</a>
+        <a href="/product-category/gift-card/" class="menu-link-link-up" data-link="/product-category/gift-card/" data-section="section4-sm01">GIFT CARD</a>
+        <a href="#" class="shop-btn-button-1" id="shopNowBtn"><button class="button_1">Discover</button></a>
+      </div>
+
+      <!-- Sections 2-4 -->
+            <a href="/product-category/shoes/"><div id="section2-sm01" class="section-img"></div></a>
+            <a href="/product-category/sale/"><div id="section3-sm01" class="section-img"></div></a>
+           <a href="/product-category/gift-card/"> <div id="section4-sm01" class="section-img"></div></a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const links = document.querySelectorAll('.menu-link-link-up');
+    const sections = document.querySelectorAll('.section-img');
+    const shopBtn = document.getElementById('shopNowBtn');
+    const stickyMenu_1 = document.getElementById('stickyMenu_1');
+
+    window.addEventListener('scroll', () => {
+      let currentSectionId = '';
+
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const sectionId = section.getAttribute('id');
+
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          currentSectionId = sectionId;
+        }
+      });
+
+      links.forEach(link => {
+        const sectionId = link.getAttribute('data-section');
+        if (sectionId === currentSectionId) {
+          link.classList.add('active');
+          shopBtn.setAttribute('href', link.getAttribute('data-link'));
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
