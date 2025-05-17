@@ -12,7 +12,7 @@
     }
     .container {
         max-width: 1920px;
-        width: 100% !important;
+        width: 100%;
         margin: 0 auto; /* Optional: for inner spacing */
     }
 
@@ -96,7 +96,7 @@
     }
 
     .section-img {
-      width: 1920px !important;
+      width: 1920px;
       height: 1100px;
       background-size: cover;
       background-repeat: no-repeat;
@@ -128,17 +128,27 @@
     #section4-sm01 {
       background-image: url('https://yn10565.com/wp-content/uploads/2025/05/BANNER-WEBSIT-3-scaled.jpg');
     }
+    
     @media (max-width: 1030px) {
     .section-img {
-    height: 50vh !important;
+    width: 100% !important;
+    height: 40vh !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     }
     .menu-link-link-up {
-    font-size: 24px;
+    font-size: 18px;
     padding: 1px;
-    line-height: 34px;
+    line-height: 28px;
     }
     #section1-sm01 {
-     margin-bottom: -270px !important;
+     margin-bottom: -200px !important;
+    }
+    .shop-btn-button-1  .button_1 {
+    font-size: 15px;
+    line-height: 15px;
+    padding: 05px 2px 8px 2px;
     }
     }
 
@@ -146,8 +156,6 @@
       .sticky-menu-link-up {
         width: 90%;
         padding: 15px;
-        /* transform: translateY(-50%) !important;
-        top: 50% !important; */
       }
       .menu-link-link-up {
         font-size: 20px;
@@ -160,70 +168,56 @@
         padding: 15px 2px 8px 2px;
       }
       .section-img {
-        width: 100% !important;
-        height: 60vh !important;
+        width: 100%;
+        height: 60vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
       }
       #section1-sm01 {
-        margin-bottom: -290px !important;
+        margin-bottom: -290px;
       }
     }
 
     @media (max-width: 580px) {
       .menu-link-link-up {
-        font-size: 17px;
+        font-size: 15px;
         padding: 1px;
-        line-height: 26px;
+        line-height: 15px;
       }
       .shop-btn-button-1  .button_1 {
         font-size: 12px;
         line-height: 14px;
-        padding: 15px 2px 8px 2px;
+        padding: 10px 2px 8px 2px;
       }
       .section-img {
-        width: 100% !important;
-        height: 50vh !important;
+        width: 100%;
+        height: 50vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
       }
       #section1-sm01 {
-        margin-bottom: -230px !important;
+        margin-bottom: -180px !important;
       }
     }
-    
-    /* @media screen and (max-width: 1900px) {
-        .sticky-menu-link-up {
-        transform: translateY(-166%) !important;
-        top: 80% !important;
-        }
-    } */
-    
     @media (min-width: 1040px) and (max-width: 1700px) {
-        /* .sticky-menu-link-up {
-        transform: translateY(-50%) !important;
-        top: 60% !important;
-        } */
         .menu-link-link-up {
         font-size: 20px;
         padding: 1px;
         line-height: 30px;
       }
         .section-img {
-        width: 100% !important;
-        height: 60vh !important;
+        width: 100%;
+        height: 5vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
       }
       #section1-sm01 {
-        margin-bottom: -305px !important;
+        margin-bottom: -285px;
       }
-      
     }
-    
 
     /* ===== Extra Responsive Handling for Zoom and Landscape ===== */
     @media screen and (min-width: 1025px) {
@@ -233,20 +227,14 @@
 
       .section-img {
         max-width: 100vw;
-        height: 90vh;
+        height: 60vh;
       }
 
       .sticky-menu-link-up {
         max-width: 100%;
         flex-wrap: wrap;
-        /* transform: translateY(-50%) !important;
-        top: 50% !important; */
       }
-      .menu-link-link-up {
-        font-size: 24px;
-        padding: 1px;
-        line-height: 34px;
-      }
+
       .menu-link-link-up {
         white-space: nowrap;
         max-width: 100%;
@@ -255,16 +243,15 @@
 
     @media screen and (max-width: 1024px) and (orientation: landscape) {
       .section-img {
-        height: 60vh !important;
+        height: 100vh !important;
         width: 100% !important;
       }
-       #section1-sm01 {
-        margin-bottom: -255px !important;
-      }
-      
+    #section1-sm01 {
+    margin-bottom: -166px !important;
+	background-position: top center !important;
+    }
       .sticky-menu-link-up {
-        /* transform: translateY(-50%) !important;
-        top: 60% !important; */
+        top: 60%;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 5px;
@@ -273,26 +260,36 @@
       }
 
       .menu-link-link-up {
-        font-size: 16px !important;
-        padding: 0px 0px !important;
-        line-height: 16px !important;
+        font-size: 16px;
+        padding: 0px 0px;
+        line-height: 16px;
 
       }
 
       .shop-btn-button-1 .button_1 {
-        padding: 10px !important;
-        font-size: 14px !important;
+        padding: 10px;
+        font-size: 14px;
       }
     }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+    .menu-link-link-up {
+    font-size: 18px;
+    line-height: 18px;
+     }
+    
+    #section1-sm01 {
+    	margin-bottom: -220px !important;
+    }
+    }
 
-    @media  (max-width: 768px) and (orientation: landscape) {
+    @media screen and (max-width: 768px) and (orientation: landscape) {
       .section-img {
         height: 100vh !important;
       }
 
       .sticky-menu-link-up {
-        /* top: 60% !important;
-        transform: translateY(-50%) !important; */
+        top: 60%;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 0px;
@@ -301,13 +298,13 @@
       }
 
       .menu-link-link-up {
-        font-size: 16px !important;
-        line-height: 16px !important;
+        font-size: 16px;
+        line-height: 16px;
       }
 
       .shop-btn-button-1 .button_1 {
-        font-size: 12px !important;
-        padding: 10px 5px !important;
+        font-size: 12px;
+        padding: 10px 5px;
       }
     }
 
@@ -328,14 +325,14 @@
         <a href="/product-category/new-collection/" class="menu-link-link-up" data-link="/product-category/new-collection/" data-section="section1-sm01">New Collection</a>
         <a href="/product-category/shoes/" class="menu-link-link-up" data-link="/product-category/shoes/" data-section="section2-sm01">SHOES</a>
         <a href="/product-category/sale/" class="menu-link-link-up" data-link="/product-category/sale/" data-section="section3-sm01">SALE</a>
-        <a href="/product-category/gift-card/" class="menu-link-link-up" data-link="/product-category/gift-card/" data-section="section4-sm01">GIFT CARD</a>
+        <a href="/product/כרטיס-מתנה/" class="menu-link-link-up" data-link="/product/כרטיס-מתנה/" data-section="section4-sm01">GIFT CARD</a>
         <a href="#" class="shop-btn-button-1" id="shopNowBtn"><button class="button_1">Discover</button></a>
       </div>
 
       <!-- Sections 2-4 -->
       <a href="/product-category/shoes/"><div id="section2-sm01" class="section-img"></div></a>
       <a href="/product-category/sale/"><div id="section3-sm01" class="section-img"></div></a>
-      <a href="/product-category/gift-card/"><div id="section4-sm01" class="section-img"></div></a>
+      <a href="/product/כרטיס-מתנה/"><div id="section4-sm01" class="section-img"></div></a>
     </div>
   </div>
 
